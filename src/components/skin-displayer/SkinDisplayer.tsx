@@ -1,6 +1,6 @@
 import { SkinCanvas } from "./SkinCanvas";
 
-export const SkinDisplayer = (props: {
+export const SkinDisplayer = (_props: {
   username: string;
   className?: string;
 }) => {
