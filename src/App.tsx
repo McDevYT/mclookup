@@ -13,7 +13,9 @@ function App() {
         <div className="page-holder">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/search/:username" element={<Search />} />
+            <Route path="/search/:username" element={<Home />} />
+            <Route path="/capes/:username" element={<Home />} />
+            <Route path="/faq/:username" element={<Home />} />
           </Routes>
         </div>
         <Background />
