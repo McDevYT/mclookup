@@ -1,9 +1,6 @@
 .background-holder {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0; /* pin to viewport without 100vw/100vh */
   z-index: -100;
 
   display: flex;
@@ -23,6 +20,7 @@
   min-width: 100%;
   min-height: 100%;
   object-fit: cover; /* ensures it fills the screen */
+  max-width: none; /* prevent intrinsic width from causing overflow */
 }
 
 @keyframes parallax {
