@@ -19,12 +19,13 @@
   height: 1000px;
 }
 
-.home-logo {
+.home-main {
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  height: 90vh;
+  flex-direction: column;
+  margin-top: 100px;
+  height: 40vh;
+  gap: 50px;
   width: 100%;
 }
 

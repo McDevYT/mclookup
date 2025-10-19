@@ -1,0 +1,29 @@
+.searchbar {
+  background: white;
+  padding: 5px;
+  height: 60px;
+  display: flex;
+  width: 400px;
+  border-radius: 100px;
+}
+
+.searchbar input {
+  background: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 20px;
+  margin-left: 15px;
+  color: black;
+}
+
+.searchbar button {
+  background: #f76c5e;
+  border: none;
+  width: 30%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Squada One", cursive;
+  border-radius: 100px;
+  cursor: pointer;
+}
