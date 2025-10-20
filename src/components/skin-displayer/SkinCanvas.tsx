@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "./SkinCanvas.css";
 
 export const SkinCanvas = (props: {
   skinUrl: string;
@@ -47,7 +48,7 @@ export const SkinCanvas = (props: {
 
   return (
     <canvas
-      className={props.className}
+      className={"skin-canvas " + props.className}
       width={16}
       height={32}
       ref={canvasRef}

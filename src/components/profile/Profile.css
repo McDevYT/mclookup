@@ -1,0 +1,25 @@
+.profile-skincanvas {
+  width: 100%;
+  filter: drop-shadow(0 0 10px #000);
+}
+
+.profile-skinviewer {
+  background: #001120;
+  width: 250px;
+  box-shadow: inset 0 0 10px #000000;
+  padding: 20px;
+}
+
+.profile {
+  background: #061625;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.profile-stats {
+  flex: 1;
+}

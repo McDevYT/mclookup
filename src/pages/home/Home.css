@@ -22,6 +22,7 @@
 .home-main {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   margin-top: 100px;
   height: 40vh;
@@ -29,6 +30,6 @@
   width: 100%;
 }
 
-.home-div {
+.home {
   width: 100%;
 }

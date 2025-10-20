@@ -1,10 +1,10 @@
 import type { Player } from "./types";
 
 export const getPlayerData = async (
-  username: string
+  playerIdentifier: string
 ): Promise<Player | null> => {
   const response = await fetch(
-    `https://mc-lookup.vercel.app/api/player/${username}`
+    `https://mc-lookup.vercel.app/api/player/${playerIdentifier}`
   );
 
   if (response.status === 204 || response.status === 404) {

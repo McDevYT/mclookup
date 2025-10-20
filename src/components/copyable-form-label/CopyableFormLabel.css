@@ -1,0 +1,32 @@
+.copyable-form-label {
+  width: 100%;
+}
+
+.copyable-form-label p {
+  font-size: 20px;
+
+  line-height: 0;
+}
+
+.copyable-form {
+  width: 100%;
+  display: flex;
+  background: #011120;
+  box-shadow: inset -2px 2px 5px #000000;
+
+  border-radius: 10px;
+}
+
+.copyable-form p {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.copyable-form button {
+  cursor: pointer;
+  background: #f76c5e;
+  border: none;
+  border-radius: 10px;
+  width: 60px;
+}
