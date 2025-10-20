@@ -9,7 +9,13 @@ export const CopyableFormLabel = (props: { label: string; value: string }) => {
     <div className="copyable-form-label">
       <p>{props.label}</p>
       <div className="copyable-form">
-        <p>{props.value}</p>
+        <input
+          className="copyable-form-text"
+          contentEditable={false}
+          readOnly
+          value={props.value}
+        />
+
         <button onClick={handleCopy}>Copy</button>
       </div>
     </div>

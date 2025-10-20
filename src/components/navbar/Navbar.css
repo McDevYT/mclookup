@@ -75,7 +75,7 @@
   margin: 0;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 800px) {
   .navbar-burger-holder {
     display: block;
   }

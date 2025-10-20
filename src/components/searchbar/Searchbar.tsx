@@ -2,9 +2,10 @@ import { useState } from "react";
 import "./Searchbar.css";
 
 export const Searchbar = (props: {
+  value: string;
   onSearch: (query: string) => void;
 }): React.ReactElement => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(props.value);
 
   const handleSearch = () => {
     props.onSearch(query.trim());

@@ -18,6 +18,8 @@ export const SkinCanvas = (props: {
     img.src = props.skinUrl;
 
     img.onload = () => {
+      ctx.clearRect(0, 0, 16, 32);
+
       ctx.drawImage(img, 8, 8, 8, 8, 4, 0, 8, 8);
       ctx.drawImage(img, 40, 8, 8, 8, 4, 0, 8, 8);
 

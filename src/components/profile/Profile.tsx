@@ -1,5 +1,6 @@
 import type { Player } from "../../scripts/types";
 import { CopyableFormLabel } from "../copyable-form-label/CopyableFormLabel";
+import { ProfileCapeList } from "../profile-cape-list/ProfileCapeList";
 import { SkinCanvas } from "../skin-displayer/SkinCanvas";
 import "./Profile.css";
 
@@ -20,6 +21,9 @@ export const Profile = (props: { player: Player }) => {
           label="Head command"
           value={`/give @p minecraft:player_head[profile={name:"${props.player.name}"}]`}
         />
+        <div className="profile-capes">
+          <ProfileCapeList capes={props.player.capes} />
+        </div>
       </div>
     </div>
   );

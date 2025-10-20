@@ -9,7 +9,10 @@ export const Home = () => {
   return (
     <div className="home">
       <div className="home-main">
-        <Searchbar onSearch={(value) => void navigate(`/search/${value}`)} />
+        <Searchbar
+          value=""
+          onSearch={(value) => void navigate(`/search/${value}`)}
+        />
       </div>
       <div className="home-content-section">
         <img src={backgroundSVG} className="background-svg" />

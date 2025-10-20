@@ -1,5 +1,6 @@
 .copyable-form-label {
   width: 100%;
+  min-width: none;
 }
 
 .copyable-form-label p {
@@ -10,15 +11,28 @@
 
 .copyable-form {
   width: 100%;
+  min-width: none;
+
   display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+
+  scrollbar-width: none;
   background: #011120;
   box-shadow: inset -2px 2px 5px #000000;
 
   border-radius: 10px;
 }
 
-.copyable-form p {
+.copyable-form input {
   flex: 1;
+  flex-shrink: 1;
+  outline: none;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  width: 0;
+  padding: 10px;
   margin-left: 10px;
   font-size: 20px;
 }

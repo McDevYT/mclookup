@@ -14,6 +14,7 @@ function App() {
           <div className="page-holder">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/search" element={<Search />} />
               <Route path="/search/:searchterm" element={<Search />} />
               <Route path="/capes/" element={<Home />} />
               <Route path="/faq/" element={<Home />} />

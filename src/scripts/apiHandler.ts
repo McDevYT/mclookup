@@ -19,5 +19,25 @@ export const getPlayerData = async (
 
   console.log(data);
 
-  return data as Player;
+  const player: Player = {
+    capes: [
+      { url: data.cape as string, title: "", type: "1" },
+      { url: data.cape as string, title: "", type: "2" },
+      { url: data.cape as string, title: "", type: "3" },
+      { url: data.cape as string, title: "", type: "4" },
+      { url: data.cape as string, title: "", type: "5" },
+      { url: data.cape as string, title: "", type: "6" },
+      { url: data.cape as string, title: "", type: "7" },
+      { url: data.cape as string, title: "", type: "8" },
+      { url: data.cape as string, title: "", type: "9" },
+      { url: data.cape as string, title: "", type: "98" },
+    ],
+    uuid: data.uuid,
+    name: data.name,
+
+    skin: data.skin,
+    model: data.model,
+  };
+
+  return player;
 };
