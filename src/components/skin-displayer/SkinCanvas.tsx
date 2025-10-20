@@ -40,6 +40,10 @@ export const SkinCanvas = (props: {
         ctx.drawImage(img, 44, 20, 4, 12, 0, 8, 4, 12);
         ctx.drawImage(img, 44, 36, 4, 12, 0, 8, 4, 12);
 
+        // Old Arm
+
+        drawFlipped(ctx, img, 44, 20, 12, 8, 4, 12, true);
+
         // Right Arm
         ctx.drawImage(img, 38, 52, 4, 12, 12, 8, 4, 12);
         ctx.drawImage(img, 50, 52, 4, 12, 12, 8, 4, 12);
@@ -48,6 +52,9 @@ export const SkinCanvas = (props: {
       // Left Leg
       ctx.drawImage(img, 4, 20, 4, 12, 4, 20, 4, 12);
       ctx.drawImage(img, 4, 36, 4, 12, 4, 20, 4, 12);
+
+      // Old Leg
+      drawFlipped(ctx, img, 4, 20, 8, 20, 4, 12, true);
 
       // Right Leg
       ctx.drawImage(img, 20, 52, 4, 12, 8, 20, 4, 12);
@@ -65,3 +72,32 @@ export const SkinCanvas = (props: {
     ></canvas>
   );
 };
+
+function drawFlipped(
+  ctx: CanvasRenderingContext2D,
+  img: CanvasImageSource,
+  sx: number,
+  sy: number,
+  dx: number,
+  dy: number,
+  width: number,
+  height: number,
+  flipH: boolean = false,
+  flipV: boolean = false
+): void {
+  ctx.save();
+  ctx.translate(dx + width / 2, dy + height / 2);
+  ctx.scale(flipH ? -1 : 1, flipV ? -1 : 1);
+  ctx.drawImage(
+    img,
+    sx,
+    sy,
+    width,
+    height,
+    -width / 2,
+    -height / 2,
+    width,
+    height
+  );
+  ctx.restore();
+}

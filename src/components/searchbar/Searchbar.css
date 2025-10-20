@@ -27,6 +27,7 @@
   width: 30%;
   padding: 10px;
   max-width: 120px;
+  min-width: 90px;
   font-size: 20px;
   font-family: "Squada One", cursive;
   border-radius: 100px;
@@ -50,5 +51,11 @@
 @media (max-width: 1200px) {
   .searchbar {
     width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .searchbar {
+    width: 90%;
   }
 }
