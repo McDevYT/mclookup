@@ -11,9 +11,15 @@ export const Search = () => {
   const navigate = useNavigate();
   const { searchterm } = useParams<{ searchterm: string }>();
 
+  const [isSearchbarSticky, setIsSearchbarSticky] = useState(
+    window.scrollY > 40
+  );
+
   const [player, setPlayer] = useState<Player | null>(null);
+
   useEffect(() => {
     if (searchterm) {
+      window.scrollTo(0, 0);
       getPlayerData(searchterm)
         .then((value) => {
           setPlayer(value);
@@ -22,24 +28,32 @@ export const Search = () => {
     }
   }, [searchterm]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSearchbarSticky(window.scrollY > 190);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="search">
       <div className="search-main">
         <Searchbar
+          isSticky={searchterm ? true : isSearchbarSticky}
           value={searchterm ?? ""}
           onSearch={(value) => void navigate(`/search/${value}`)}
         />
-        <div className="search-profile-holder">
-          {searchterm ? (
-            player ? (
+        {searchterm && (
+          <div className="search-profile-holder">
+            {player ? (
               <Profile player={player} />
             ) : (
               <h1 className="search-nothing-found">No user found!</h1>
-            )
-          ) : (
-            <div />
-          )}
-        </div>
+            )}
+          </div>
+        )}
       </div>
       <div className="search-content-section">
         <img src={backgroundSVG} className="background-svg" />

@@ -25,7 +25,8 @@ export const getPlayerData = async (
           {
             url: data.cape as string,
             title: "",
-            type: "1",
+            type: "",
+            removed: false,
           },
         ]
       : []);
@@ -44,7 +45,9 @@ export const getPlayerData = async (
 
 const getPlayerCapes = async (
   uuid: string
-): Promise<{ url: string; title: string; type: string }[] | null> => {
+): Promise<
+  { url: string; title: string; type: string; removed: boolean }[] | null
+> => {
   let response;
   try {
     response = await fetch(`https://capes.me/api/user/${uuid}`);
@@ -60,7 +63,12 @@ const getPlayerCapes = async (
     return null;
   }
 
-  const capes: { url: string; title: string; type: string }[] = [];
+  const capes: {
+    url: string;
+    title: string;
+    type: string;
+    removed: boolean;
+  }[] = [];
 
   data.capes.forEach((cape: { type: string; removed: boolean }) => {
     const currentCape = capeList[cape.type];
@@ -68,6 +76,7 @@ const getPlayerCapes = async (
       type: currentCape.type,
       title: currentCape.title,
       url: currentCape.url,
+      removed: cape.removed,
     });
   });
 

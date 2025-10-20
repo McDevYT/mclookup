@@ -3,6 +3,8 @@
 }
 
 .background-svg {
+  user-select: none;
+
   position: relative;
   margin-bottom: -10px;
   z-index: 1;
@@ -25,7 +27,8 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 100px;
-  height: 40vh;
+
+  height: 50vh;
   gap: 50px;
   width: 100%;
 }

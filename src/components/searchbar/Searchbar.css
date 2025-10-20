@@ -1,11 +1,13 @@
 .searchbar {
   background: white;
   padding: 5px;
+  z-index: 3;
   height: 60px;
   display: flex;
-  max-width: 700px;
-  width: 90%;
+  max-width: 900px;
+  width: 30%;
   border-radius: 100px;
+  transition: width 0.3s ease-out;
 }
 
 .searchbar input {
@@ -24,8 +26,29 @@
   border: none;
   width: 30%;
   padding: 10px;
+  max-width: 120px;
   font-size: 20px;
   font-family: "Squada One", cursive;
   border-radius: 100px;
   cursor: pointer;
+}
+
+.searchbar-holder {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.searchbar.sticky {
+  position: fixed;
+  top: 100px;
+  width: 90%;
+}
+
+@media (max-width: 1200px) {
+  .searchbar {
+    width: 70%;
+  }
 }

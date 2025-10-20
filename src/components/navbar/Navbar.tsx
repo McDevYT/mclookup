@@ -12,7 +12,10 @@ export const Navbar = () => {
   const burgerRef = useRef<HTMLButtonElement>(null);
 
   const updateUnderline = () => {
-    const current = linkRefs.current[location.pathname];
+    const path = location.pathname.includes("/search")
+      ? "/search"
+      : location.pathname;
+    const current = linkRefs.current[path];
     const underline = underlineRef.current;
     if (current && underline) {
       const rect = current.getBoundingClientRect();

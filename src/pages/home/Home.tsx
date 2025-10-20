@@ -10,6 +10,7 @@ export const Home = () => {
     <div className="home">
       <div className="home-main">
         <Searchbar
+          isSticky={true}
           value=""
           onSearch={(value) => void navigate(`/search/${value}`)}
         />

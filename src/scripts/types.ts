@@ -7,6 +7,7 @@ export interface Player {
     type: string;
     title: string;
     url: string;
+    removed: boolean;
   }[];
 }
 

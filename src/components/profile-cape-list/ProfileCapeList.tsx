@@ -2,7 +2,7 @@ import { CapeCanvas } from "../skin-displayer/CapeCanvas";
 import "./ProfileCapeList.css";
 
 export const ProfileCapeList = (props: {
-  capes: { title: string; type: string; url: string }[];
+  capes: { title: string; type: string; url: string; removed: boolean }[];
 }) => {
   return (
     <div className="profile-cape-list-label">
@@ -12,7 +12,9 @@ export const ProfileCapeList = (props: {
           props.capes.map((cape) => (
             <CapeCanvas
               key={cape.type}
-              className="profile-cape-list-cape"
+              className={`profile-cape-list-cape ${
+                cape.removed ? "cape-removed" : ""
+              }`}
               capeUrl={cape.url}
             />
           ))

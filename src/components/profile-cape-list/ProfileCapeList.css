@@ -10,6 +10,10 @@
   line-height: 0;
 }
 
+.cape-removed {
+  filter: grayscale(100%) brightness(85%) !important;
+}
+
 .profile-cape-list {
   width: 100%;
   display: flex;
