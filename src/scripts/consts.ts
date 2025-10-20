@@ -1,6 +1,6 @@
 import type { Cape } from "./types";
 
-export const capes: Record<string, Cape> = {
+export const capeList: Record<string, Cape> = {
   "2011": {
     url: "http://textures.minecraft.net/texture/953cac8b779fe41383e675ee2b86071a71658f2180f56fbce8aa315ea70e2ed6",
     type: "2011",

@@ -4,18 +4,21 @@ import "./ProfileCapeList.css";
 export const ProfileCapeList = (props: {
   capes: { title: string; type: string; url: string }[];
 }) => {
-  console.log(props.capes);
   return (
     <div className="profile-cape-list-label">
       <p>Capes</p>
       <div className="profile-cape-list">
-        {props.capes.map((cape) => (
-          <CapeCanvas
-            key={cape.type}
-            className="profile-cape-list-cape"
-            capeUrl={cape.url}
-          />
-        ))}
+        {props.capes.length > 0 ? (
+          props.capes.map((cape) => (
+            <CapeCanvas
+              key={cape.type}
+              className="profile-cape-list-cape"
+              capeUrl={cape.url}
+            />
+          ))
+        ) : (
+          <h2>No Capes</h2>
+        )}
       </div>
     </div>
   );

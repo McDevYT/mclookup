@@ -1,3 +1,4 @@
+import { capeList } from "./consts";
 import type { Player } from "./types";
 
 export const getPlayerData = async (
@@ -17,21 +18,20 @@ export const getPlayerData = async (
   }
   const data = await response.json();
 
-  console.log(data);
+  const capes =
+    (await getPlayerCapes(data.uuid)) ??
+    (data.cape
+      ? [
+          {
+            url: data.cape as string,
+            title: "",
+            type: "1",
+          },
+        ]
+      : []);
 
   const player: Player = {
-    capes: [
-      { url: data.cape as string, title: "", type: "1" },
-      { url: data.cape as string, title: "", type: "2" },
-      { url: data.cape as string, title: "", type: "3" },
-      { url: data.cape as string, title: "", type: "4" },
-      { url: data.cape as string, title: "", type: "5" },
-      { url: data.cape as string, title: "", type: "6" },
-      { url: data.cape as string, title: "", type: "7" },
-      { url: data.cape as string, title: "", type: "8" },
-      { url: data.cape as string, title: "", type: "9" },
-      { url: data.cape as string, title: "", type: "98" },
-    ],
+    capes: capes,
     uuid: data.uuid,
     name: data.name,
 
@@ -40,4 +40,36 @@ export const getPlayerData = async (
   };
 
   return player;
+};
+
+const getPlayerCapes = async (
+  uuid: string
+): Promise<{ url: string; title: string; type: string }[] | null> => {
+  let response;
+  try {
+    response = await fetch(`https://capes.me/api/user/${uuid}`);
+  } catch (e) {
+    return null;
+  }
+  if (response.status === 204 || response.status === 404) {
+    return null;
+  }
+  const data = await response.json();
+
+  if (data.error) {
+    return null;
+  }
+
+  const capes: { url: string; title: string; type: string }[] = [];
+
+  data.capes.forEach((cape: { type: string; removed: boolean }) => {
+    const currentCape = capeList[cape.type];
+    capes.push({
+      type: currentCape.type,
+      title: currentCape.title,
+      url: currentCape.url,
+    });
+  });
+
+  return capes;
 };
