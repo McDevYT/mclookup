@@ -3,12 +3,7 @@ export interface Player {
   name: string;
   skin: string;
   model: string;
-  capes: {
-    type: string;
-    title: string;
-    url: string;
-    removed: boolean;
-  }[];
+  capes: PlayerCape[];
 }
 
 export interface Cape {
@@ -20,4 +15,13 @@ export interface Cape {
   hidden?: boolean;
   cache: boolean;
   value: number;
+}
+
+export interface PlayerCape {
+  url: string;
+  type: string;
+  title: string;
+  class: string;
+  value: number;
+  removed: boolean;
 }

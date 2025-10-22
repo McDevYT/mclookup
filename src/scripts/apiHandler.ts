@@ -1,5 +1,5 @@
 import { capeList } from "./consts";
-import type { Player } from "./types";
+import type { Player, PlayerCape } from "./types";
 
 export const getPlayerData = async (
   playerIdentifier: string
@@ -63,12 +63,7 @@ const getPlayerCapes = async (
     return null;
   }
 
-  const capes: {
-    url: string;
-    title: string;
-    type: string;
-    removed: boolean;
-  }[] = [];
+  const capes: PlayerCape[] = [];
 
   data.capes.forEach((cape: { type: string; removed: boolean }) => {
     const currentCape = capeList[cape.type];
@@ -77,6 +72,8 @@ const getPlayerCapes = async (
       title: currentCape.title,
       url: currentCape.url,
       removed: cape.removed,
+      value: currentCape.value,
+      class: currentCape.class,
     });
   });
 

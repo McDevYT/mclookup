@@ -11,6 +11,8 @@ export const Search = () => {
   const navigate = useNavigate();
   const { searchterm } = useParams<{ searchterm: string }>();
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const [isSearchbarSticky, setIsSearchbarSticky] = useState(
     window.scrollY > 40
   );
@@ -19,12 +21,17 @@ export const Search = () => {
 
   useEffect(() => {
     if (searchterm) {
+      setIsLoading(true);
       window.scrollTo(0, 0);
       getPlayerData(searchterm)
         .then((value) => {
           setPlayer(value);
+          setIsLoading(false);
         })
-        .catch(() => setPlayer(null));
+        .catch(() => {
+          setIsLoading(false);
+          setPlayer(null);
+        });
     }
   }, [searchterm]);
 
@@ -50,7 +57,9 @@ export const Search = () => {
             {player ? (
               <Profile player={player} />
             ) : (
-              <h1 className="search-nothing-found">No user found!</h1>
+              !isLoading && (
+                <h1 className="search-nothing-found">No Player found</h1>
+              )
             )}
           </div>
         )}

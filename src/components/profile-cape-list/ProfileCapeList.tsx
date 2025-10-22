@@ -1,9 +1,10 @@
+import type { PlayerCape } from "../../scripts/types";
 import { CapeCanvas } from "../skin-displayer/CapeCanvas";
 import "./ProfileCapeList.css";
 
-export const ProfileCapeList = (props: {
-  capes: { title: string; type: string; url: string; removed: boolean }[];
-}) => {
+export const ProfileCapeList = (props: { capes: PlayerCape[] }) => {
+  props.capes.sort((a, b) => b.value - a.value);
+
   return (
     <div className="profile-cape-list-label">
       <p>Capes</p>
