@@ -1,0 +1,17 @@
+.cape-display {
+  transition: scale 0.05s ease-out;
+  scale: 1;
+  cursor: pointer;
+}
+
+.cape-display:hover {
+  scale: 1.1;
+}
+
+.cape-display:active {
+  scale: 1;
+}
+
+.cape-display-canvas {
+  width: 100px;
+}

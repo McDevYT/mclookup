@@ -2,14 +2,14 @@ import type { PlayerCape } from "../../scripts/types";
 import { CapeCanvas } from "../skin-displayer/CapeCanvas";
 import "./ProfileCapeList.css";
 
-export const ProfileCapeList = (props: { capes: PlayerCape[] }) => {
-  props.capes.sort((a, b) => b.value - a.value);
+export const ProfileCapeList = (props: { capes: PlayerCape[] | undefined }) => {
+  props.capes?.sort((a, b) => b.value - a.value);
 
   return (
     <div className="profile-cape-list-label">
       <p>Capes</p>
       <div className="profile-cape-list">
-        {props.capes.length > 0 ? (
+        {props.capes && props.capes.length > 0 ? (
           props.capes.map((cape) => (
             <CapeCanvas
               key={cape.type}

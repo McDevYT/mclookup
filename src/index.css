@@ -9,6 +9,11 @@
   --color-secondary: #f76c5e;
   --color-accent: #162a3d;
   --color-background: #061625;
+  --color-background-dark: color-mix(
+    in srgb,
+    var(--color-background) 80%,
+    black
+  );
 
   overflow-x: hidden;
   font-synthesis: none;

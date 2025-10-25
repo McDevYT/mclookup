@@ -7,6 +7,7 @@ import { StrictMode } from "react";
 import { Search } from "./pages/search/Search";
 import { Contact } from "./pages/contact/Contact";
 import { Footer } from "./components/footer/Footer";
+import { Capes } from "./pages/capes/Capes";
 function App() {
   return (
     <>
@@ -18,9 +19,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/search" element={<Search />} />
               <Route path="/search/:searchterm" element={<Search />} />
-              <Route path="/capes/" element={<Home />} />
+              <Route path="/capes/" element={<Capes />} />
               <Route path="/faq/" element={<Home />} />
-              <Route path="/Contact/" element={<Contact />} />
+              <Route path="/contact/" element={<Contact />} />
             </Routes>
             <Footer />
           </div>

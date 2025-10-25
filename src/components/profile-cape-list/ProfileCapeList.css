@@ -21,7 +21,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10px;
-  background: #011120;
+  background: var(--color-background-dark);
   box-shadow: inset -2px 2px 5px #000000;
 
   padding: 10px;

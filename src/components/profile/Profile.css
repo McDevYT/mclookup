@@ -6,7 +6,8 @@
 }
 
 .profile-skinviewer {
-  background: #001120;
+  background: var(--color-background-dark);
+
   max-height: 540px;
   width: 250px;
   display: flex;

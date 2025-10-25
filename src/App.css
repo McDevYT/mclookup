@@ -1,5 +1,4 @@
 .page-holder {
-  /* Use percentage to avoid including scrollbar width on some devices */
   width: 100%;
   min-height: 100vh;
 }

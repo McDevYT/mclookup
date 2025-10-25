@@ -49,11 +49,12 @@
 
 .contact-form input,
 .contact-form textarea {
+  background: var(--color-background-dark);
+  box-shadow: inset -2px 2px 5px #000000;
   padding: 10px;
   width: 100%;
   resize: none;
-  background: white;
-  color: black;
+  color: var(--color-primary);
   outline: none;
   border: none;
 
@@ -71,4 +72,10 @@
   font-family: "Squada One", cursive;
   border-radius: 100px;
   cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .contact-form button {
+    width: 100%;
+  }
 }
