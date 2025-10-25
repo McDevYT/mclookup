@@ -29,7 +29,7 @@
 }
 
 .profile {
-  background: #061625;
+  background: var(--color-background);
   padding: 20px;
   display: flex;
   gap: 20px;

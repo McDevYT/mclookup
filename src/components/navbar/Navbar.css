@@ -61,7 +61,7 @@
   height: 5px;
   width: 0;
   border-radius: 10px;
-  background: #f76c5e;
+  background: var(--color-secondary);
   transition: transform 0.3s ease, width 0.3s ease;
   z-index: 1;
   will-change: transform, width;
@@ -75,7 +75,7 @@
   margin: 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .navbar-burger-holder {
     display: block;
   }
@@ -127,7 +127,7 @@
   left: 0;
   z-index: -1;
   width: 100%;
-  background-color: #061625;
+  background-color: var(--color-background);
   transition: transform 0.3s ease;
 
   display: flex;

@@ -22,7 +22,7 @@
 }
 
 .searchbar button {
-  background: #f76c5e;
+  background: var(--color-secondary);
   border: none;
   width: 30%;
   padding: 10px;

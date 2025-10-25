@@ -1,0 +1,74 @@
+.contact-content-section {
+  width: 100%;
+}
+
+.contact-content {
+  background: var(--color-background);
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+
+  height: 15vh;
+  gap: 50px;
+  width: 100%;
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact-form {
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 700px;
+}
+
+.contact-form label {
+  width: 100%;
+
+  font-size: 25px;
+  font-family: "Squada One", cursive;
+  margin: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  width: 100%;
+  resize: none;
+  background: white;
+  color: black;
+  outline: none;
+  border: none;
+
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.contact-form button {
+  margin-right: auto;
+  background: var(--color-secondary);
+  border: none;
+  width: 30%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Squada One", cursive;
+  border-radius: 100px;
+  cursor: pointer;
+}

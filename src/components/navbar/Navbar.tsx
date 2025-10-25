@@ -107,6 +107,17 @@ export const Navbar = () => {
             FAQ
           </Link>
         </li>
+        <li>
+          <Link
+            className="navbar-a"
+            to="/contact"
+            ref={(el) => {
+              linkRefs.current["/contact"] = el;
+            }}
+          >
+            Contact
+          </Link>
+        </li>
         <div className="navbar-underline" ref={underlineRef} />
       </ul>
 

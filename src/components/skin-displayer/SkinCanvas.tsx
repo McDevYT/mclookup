@@ -41,7 +41,6 @@ export const SkinCanvas = (props: {
         ctx.drawImage(img, 44, 36, 4, 12, 0, 8, 4, 12);
 
         // Old Arm
-
         drawFlipped(ctx, img, 44, 20, 12, 8, 4, 12, true);
 
         // Right Arm

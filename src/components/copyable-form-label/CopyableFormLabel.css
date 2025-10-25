@@ -39,7 +39,7 @@
 
 .copyable-form button {
   cursor: pointer;
-  background: #f76c5e;
+  background: var(--color-secondary);
   border: none;
   border-radius: 10px;
   width: 60px;

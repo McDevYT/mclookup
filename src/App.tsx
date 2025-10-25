@@ -5,6 +5,8 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Background } from "./components/background/Background";
 import { StrictMode } from "react";
 import { Search } from "./pages/search/Search";
+import { Contact } from "./pages/contact/Contact";
+import { Footer } from "./components/footer/Footer";
 function App() {
   return (
     <>
@@ -18,7 +20,9 @@ function App() {
               <Route path="/search/:searchterm" element={<Search />} />
               <Route path="/capes/" element={<Home />} />
               <Route path="/faq/" element={<Home />} />
+              <Route path="/Contact/" element={<Contact />} />
             </Routes>
+            <Footer />
           </div>
           <Background />
         </BrowserRouter>

@@ -19,13 +19,12 @@ export const getPlayerData = async (
   const data = await response.json();
 
   const capes: PlayerCape[] | undefined = [];
+  console.log(data);
 
   if (data.capes) {
-    data.capes.foreach((cape: { type: string; removed: boolean }) => {
+    data.capes.forEach((cape: { type: string; removed: boolean }) => {
       capes.push(getPlayerCape(cape.type, cape.removed));
     });
-  } else if (data.currentCape) {
-    capes.push(getPlayerCape(data.currentCape, false));
   }
 
   const player: Player = {

@@ -4,7 +4,11 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  background-color: #242424;
+
+  --color-primary: #ffffff;
+  --color-secondary: #f76c5e;
+  --color-accent: #162a3d;
+  --color-background: #061625;
 
   overflow-x: hidden;
   font-synthesis: none;
@@ -34,5 +38,6 @@ body {
 h1,
 h2,
 h3 {
+  color: var(--color-primary);
   font-family: "Squada One", cursive;
 }

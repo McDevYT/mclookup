@@ -1,0 +1,5 @@
+.footer {
+  background: var(--color-accent);
+  height: 400px;
+  width: 100vw;
+}
