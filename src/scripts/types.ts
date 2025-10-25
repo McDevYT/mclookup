@@ -3,7 +3,7 @@ export interface Player {
   name: string;
   skin: string;
   model: string;
-  capes: PlayerCape[];
+  capes: PlayerCape[] | undefined;
 }
 
 export interface Cape {

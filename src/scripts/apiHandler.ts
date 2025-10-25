@@ -18,18 +18,15 @@ export const getPlayerData = async (
   }
   const data = await response.json();
 
-  const capes =
-    (await getPlayerCapes(data.uuid)) ??
-    (data.cape
-      ? [
-          {
-            url: data.cape as string,
-            title: "",
-            type: "",
-            removed: false,
-          },
-        ]
-      : []);
+  const capes: PlayerCape[] | undefined = [];
+
+  if (data.capes) {
+    data.capes.foreach((cape: { type: string; removed: boolean }) => {
+      capes.push(getPlayerCape(cape.type, cape.removed));
+    });
+  } else if (data.currentCape) {
+    capes.push(getPlayerCape(data.currentCape, false));
+  }
 
   const player: Player = {
     capes: capes,
@@ -43,39 +40,14 @@ export const getPlayerData = async (
   return player;
 };
 
-const getPlayerCapes = async (
-  uuid: string
-): Promise<
-  { url: string; title: string; type: string; removed: boolean }[] | null
-> => {
-  let response;
-  try {
-    response = await fetch(`https://capes.me/api/user/${uuid}`);
-  } catch (e) {
-    return null;
-  }
-  if (response.status === 204 || response.status === 404) {
-    return null;
-  }
-  const data = await response.json();
-
-  if (data.error) {
-    return null;
-  }
-
-  const capes: PlayerCape[] = [];
-
-  data.capes.forEach((cape: { type: string; removed: boolean }) => {
-    const currentCape = capeList[cape.type];
-    capes.push({
-      type: currentCape.type,
-      title: currentCape.title,
-      url: currentCape.url,
-      removed: cape.removed,
-      value: currentCape.value,
-      class: currentCape.class,
-    });
-  });
-
-  return capes;
+const getPlayerCape = (capeType: string, removed: boolean): PlayerCape => {
+  const currentCape = capeList[capeType];
+  return {
+    class: currentCape.class,
+    removed: removed,
+    title: currentCape.title,
+    type: capeType,
+    url: currentCape.url,
+    value: currentCape.value,
+  };
 };
