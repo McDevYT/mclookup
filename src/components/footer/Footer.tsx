@@ -1,5 +1,19 @@
+import { useState } from "react";
 import "./Footer.css";
+import { Impressum } from "../impressum/Impressum";
 
 export const Footer = () => {
-  return <footer className="footer"></footer>;
+  const [isImpressumOpen, setIsImpressumOpen] = useState(true);
+
+  return (
+    <footer className="footer">
+      <Impressum
+        isOpen={isImpressumOpen}
+        onClose={() => {
+          setIsImpressumOpen(false);
+        }}
+      />
+      <a onClick={() => setIsImpressumOpen(true)}>Impressum</a>
+    </footer>
+  );
 };

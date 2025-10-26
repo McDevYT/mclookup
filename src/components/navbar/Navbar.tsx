@@ -150,6 +150,9 @@ export const Navbar = () => {
           <Link className="navbar-a" to="/faq">
             FAQ
           </Link>
+          <Link className="navbar-a" to="/contact">
+            Contact
+          </Link>
         </div>
       </div>
     </nav>
