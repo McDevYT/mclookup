@@ -1,0 +1,105 @@
+.faq-content-section {
+  width: 100%;
+}
+
+.faq-content {
+  background: var(--color-background);
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+
+  height: 15vh;
+  gap: 50px;
+  width: 100%;
+}
+
+.faq {
+  width: 100%;
+}
+
+/* FAQ Table Styling */
+.faq-content table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 900px;
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.faq-content th,
+.faq-content td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.faq-content th {
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.faq-content td:first-child {
+  color: var(--color-secondary);
+  font-weight: 600;
+  width: 35%;
+}
+
+.faq-content td:last-child {
+  color: var(--color-primary);
+  line-height: 1.6;
+}
+
+/* Hover effect for rows */
+.faq-content tbody tr:hover {
+  background: rgba(0, 0, 0, 0.03);
+  transition: background 0.2s ease-in-out;
+}
+
+/* Make it look good on smaller screens */
+@media (max-width: 700px) {
+  .faq-content table,
+  .faq-content thead {
+    display: none;
+  }
+
+  .faq-content tbody tr {
+    display: block;
+    background: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 1rem;
+  }
+
+  .faq-content td {
+    display: block;
+    padding: 0.5rem 0;
+    border: none;
+  }
+
+  .faq-content td:first-child {
+    color: var(--color-secondary);
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .faq-content td:last-child {
+    color: var(--color-primary);
+  }
+}

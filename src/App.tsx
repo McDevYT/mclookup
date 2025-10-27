@@ -8,6 +8,7 @@ import { Search } from "./pages/search/Search";
 import { Contact } from "./pages/contact/Contact";
 import { Footer } from "./components/footer/Footer";
 import { Capes } from "./pages/capes/Capes";
+import { FAQ } from "./pages/faq/FAQ";
 function App() {
   return (
     <>
@@ -20,7 +21,7 @@ function App() {
               <Route path="/search" element={<Search />} />
               <Route path="/search/:searchterm" element={<Search />} />
               <Route path="/capes/" element={<Capes />} />
-              <Route path="/faq/" element={<Home />} />
+              <Route path="/faq/" element={<FAQ />} />
               <Route path="/contact/" element={<Contact />} />
             </Routes>
             <Footer />
