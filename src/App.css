@@ -10,8 +10,26 @@
   margin-bottom: -10px;
   z-index: 1;
   display: block;
-  width: 100%;
+  width: 123%;
 
   filter: drop-shadow(0px -5px 0px rgba(15, 36, 94, 0.8))
     drop-shadow(-2px 0 0px rgba(3, 17, 56, 0.8));
+}
+
+@media (max-width: 1200px) {
+  .background-svg {
+    width: 184%;
+  }
+}
+
+@media (max-width: 800px) {
+  .background-svg {
+    width: 246%;
+  }
+}
+
+@media (max-width: 500px) {
+  .background-svg {
+    width: 310%;
+  }
 }

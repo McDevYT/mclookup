@@ -15,6 +15,7 @@ export const CapeDisplay = (props: {
         className="cape-display-canvas"
         key={props.type}
       />
+      <h4>{props.title}</h4>
     </div>
   );
 };

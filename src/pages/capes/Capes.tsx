@@ -19,14 +19,16 @@ export const Capes = () => {
       <div className="capes-content-section">
         <img src={backgroundSVG} className="background-svg" />
         <div className="capes-content">
-          {Object.values(capeList).map((cape) => (
-            <CapeDisplay
-              capeUrl={cape.url}
-              description="Hello"
-              type={cape.type}
-              title={cape.title}
-            />
-          ))}
+          <div className="capes-list">
+            {Object.values(capeList).map((cape) => (
+              <CapeDisplay
+                capeUrl={cape.url}
+                description="Hello"
+                type={cape.type}
+                title={cape.title}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

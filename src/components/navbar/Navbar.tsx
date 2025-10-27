@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./Navbar.css";
+import Logo from "../../assets/logo.svg";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -58,9 +59,10 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
+      <Link className="navbar-logo" to="/">
+        <img className="navbar-logo-svg" src={Logo}></img>
         <h1>McLookup</h1>
-      </div>
+      </Link>
 
       <ul className="navbar-links">
         <li>
