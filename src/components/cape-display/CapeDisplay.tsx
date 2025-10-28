@@ -5,11 +5,11 @@ export const CapeDisplay = (props: {
   capeUrl: string;
   className?: string;
   type: string;
-  description: string;
   title: string;
+  selectCape: () => void;
 }) => {
   return (
-    <div className="cape-display">
+    <div className="cape-display" onClick={props.selectCape}>
       <CapeCanvas
         capeUrl={props.capeUrl}
         className="cape-display-canvas"

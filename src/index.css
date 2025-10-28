@@ -11,7 +11,7 @@
   --color-background: #061625;
   --color-background-dark: color-mix(
     in srgb,
-    var(--color-background) 80%,
+    var(--color-background) 70%,
     black
   );
 

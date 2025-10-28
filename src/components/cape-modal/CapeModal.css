@@ -1,0 +1,17 @@
+.cape-modal-canvas {
+  width: 200px;
+  height: 300px;
+}
+
+.cape-modal {
+  height: 100%;
+  gap: 10px;
+  padding: 20px;
+  display: flex;
+}
+
+@media (max-width: 650px) {
+  .cape-modal {
+    flex-direction: column;
+  }
+}

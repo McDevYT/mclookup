@@ -9,6 +9,7 @@ import { Contact } from "./pages/contact/Contact";
 import { Footer } from "./components/footer/Footer";
 import { Capes } from "./pages/capes/Capes";
 import { FAQ } from "./pages/faq/FAQ";
+
 function App() {
   return (
     <>
