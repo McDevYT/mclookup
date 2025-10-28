@@ -6,6 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import type { Player } from "../../scripts/types";
 import { getPlayerData } from "../../scripts/apiHandler";
+import { ProfileLoader } from "../../components/profile-loader/ProfileLoader";
 
 export const Search = () => {
   const navigate = useNavigate();
@@ -56,10 +57,10 @@ export const Search = () => {
           <div className="search-profile-holder">
             {player ? (
               <Profile player={player} />
+            ) : isLoading ? (
+              <ProfileLoader />
             ) : (
-              !isLoading && (
-                <h1 className="search-nothing-found">No Player found</h1>
-              )
+              <h1 className="search-nothing-found">No Player found</h1>
             )}
           </div>
         )}

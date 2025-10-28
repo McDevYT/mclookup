@@ -26,9 +26,17 @@
 .cape-display-canvas {
   transition: scale 0.05s ease-out;
   border-radius: 10px;
-  width: 100px;
+  flex: 1;
 }
 
 .cape-display h4 {
+  margin-top: 6px;
   margin-bottom: 0px;
+}
+
+@media (max-width: 700px) {
+  .cape-display {
+    width: 150px;
+    height: 150px;
+  }
 }

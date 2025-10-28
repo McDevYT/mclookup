@@ -1,4 +1,4 @@
-import type { Cape } from "../../scripts/types";
+import type { Cape, PlayerCape } from "../../scripts/types";
 import { Modal } from "../modal/modal";
 import { CapeCanvas } from "../skin-displayer/CapeCanvas";
 import "./CapeModal.css";
@@ -6,7 +6,7 @@ import "./CapeModal.css";
 export const CapeModal = (props: {
   isOpen: boolean;
   onClose: () => void;
-  cape: Cape | undefined;
+  cape: Cape | PlayerCape | undefined;
 }) => {
   return (
     <Modal
@@ -16,6 +16,7 @@ export const CapeModal = (props: {
     >
       <div className="cape-modal">
         <CapeCanvas
+          onClick={() => {}}
           className="cape-modal-canvas"
           capeUrl={props.cape?.url ?? ""}
         />

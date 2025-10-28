@@ -9,7 +9,7 @@
 
   animation: parallax linear;
   animation-timeline: scroll(root);
-  animation-range: 0 3000px;
+  animation-range: 0 6000px;
 }
 
 .background-holder > img {
@@ -17,8 +17,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 200%;
-  min-height: 200%;
+  min-width: 175%;
+  min-height: 175%;
   max-width: none;
 }
 

@@ -24,5 +24,6 @@ export interface PlayerCape {
   title: string;
   class: string;
   value: number;
+  description: string;
   removed: boolean;
 }

@@ -70,6 +70,7 @@ export const FAQ = () => {
       <div className="faq-content-section">
         <img src={backgroundSVG} className="background-svg" />
         <div className="faq-content">
+          <h1>Frequently Asked Questions</h1>
           <table cellPadding="8" cellSpacing="0">
             <thead>
               <tr>

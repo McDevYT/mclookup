@@ -2,7 +2,10 @@ import type { PlayerCape } from "../../scripts/types";
 import { CapeCanvas } from "../skin-displayer/CapeCanvas";
 import "./ProfileCapeList.css";
 
-export const ProfileCapeList = (props: { capes: PlayerCape[] | undefined }) => {
+export const ProfileCapeList = (props: {
+  capes: PlayerCape[] | undefined;
+  selectCape: (cape: PlayerCape) => void;
+}) => {
   props.capes?.sort((a, b) => b.value - a.value);
 
   return (
@@ -12,6 +15,7 @@ export const ProfileCapeList = (props: { capes: PlayerCape[] | undefined }) => {
         {props.capes && props.capes.length > 0 ? (
           props.capes.map((cape) => (
             <CapeCanvas
+              onClick={() => props.selectCape(cape)}
               key={cape.type}
               className={`profile-cape-list-cape ${
                 cape.removed ? "cape-removed" : ""

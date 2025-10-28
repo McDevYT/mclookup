@@ -31,10 +31,14 @@
 
 .profile-cape-list-cape {
   width: 100px;
-
+  cursor: pointer;
   scrollbar-width: none;
   background: #011120;
   filter: drop-shadow(0 0 10px #000);
-
+  transition: scale 0.1s ease-in-out;
   border-radius: 10px;
+}
+
+.profile-cape-list-cape:active {
+  scale: 0.9;
 }

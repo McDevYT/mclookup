@@ -1,12 +1,11 @@
 .cape-modal-canvas {
-  width: 200px;
-  height: 300px;
+  width: 250px;
 }
 
 .cape-modal {
   height: 100%;
-  gap: 10px;
-  padding: 20px;
+  gap: 40px;
+  padding: 50px;
   display: flex;
 }
 

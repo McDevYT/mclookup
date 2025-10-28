@@ -1,4 +1,4 @@
-import { capeList } from "./consts";
+import { capeList, easterEggs } from "./consts";
 import type { Player, PlayerCape } from "./types";
 
 export const getPlayerData = async (
@@ -19,15 +19,18 @@ export const getPlayerData = async (
   const data = await response.json();
 
   const capes: PlayerCape[] | undefined = [];
-  console.log(data);
 
   if (data.capes) {
     data.capes.forEach((cape: { type: string; removed: boolean }) => {
       capes.push(getPlayerCape(cape.type, cape.removed));
     });
   }
-  if (data.name === "McDevYT") {
-    capes.push(getPlayerCape("realms", false));
+
+  const easterEgg = easterEggs[data.uuid as string];
+  if (easterEgg?.capes !== undefined) {
+    Object.values(easterEgg.capes).map((cape) => {
+      capes.push({ ...cape, removed: false });
+    });
   }
 
   const player: Player = {
@@ -51,5 +54,6 @@ const getPlayerCape = (capeType: string, removed: boolean): PlayerCape => {
     type: capeType,
     url: currentCape.url,
     value: currentCape.value,
+    description: currentCape.description,
   };
 };

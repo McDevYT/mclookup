@@ -5,16 +5,35 @@
   filter: drop-shadow(0 0 10px #000);
 }
 
+.profile-skinviewer button {
+  background: var(--color-secondary);
+  border: none;
+  font-size: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 5px 30px;
+  font-family: "Squada One", cursive;
+  transition: scale 0.3s ease-in-out;
+}
+
+.profile-skinviewer button:active {
+  scale: 0.9;
+}
+
 .profile-skinviewer {
   background: var(--color-background-dark);
+
+  flex-direction: column;
+
+  gap: 20px;
 
   max-height: 540px;
   width: 250px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   box-shadow: inset 0 0 10px #000000;
-  padding: 30px;
+  padding: 20px;
 }
 
 @media (max-width: 700px) {

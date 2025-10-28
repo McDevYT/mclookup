@@ -2,6 +2,13 @@
   width: 100%;
 }
 
+.capes-content h1 {
+  width: 100%;
+  text-align: center;
+  text-wrap: wrap;
+  margin-left: auto;
+}
+
 .capes-content {
   background: var(--color-background);
   width: 100%;
@@ -30,7 +37,7 @@
   max-width: 1000px;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
   margin: auto;
 }

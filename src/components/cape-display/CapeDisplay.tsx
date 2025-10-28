@@ -11,6 +11,7 @@ export const CapeDisplay = (props: {
   return (
     <div className="cape-display" onClick={props.selectCape}>
       <CapeCanvas
+        onClick={props.selectCape}
         capeUrl={props.capeUrl}
         className="cape-display-canvas"
         key={props.type}

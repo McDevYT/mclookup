@@ -1,4 +1,5 @@
 import type { Cape } from "./types";
+import mcdevytCape from "../assets/mcdevyt-cape.png";
 
 export const capeList: Record<string, Cape> = {
   "2011": {
@@ -479,5 +480,39 @@ export const capeList: Record<string, Cape> = {
     value: 12,
     description:
       "Personal cape originally given by Notch to Miclee (Bacon_Donut) for contribution/idea (Pigman). Documented as one of the earliest personal capes and later revoked from public gifting.",
+  },
+};
+
+export const easterEggs: Record<
+  string,
+  {
+    nameColor: string;
+    bold: boolean;
+    prefix: string;
+    capes?: Record<string, Cape>;
+  }
+> = {
+  "3a84682ccd52495f86d37b02b67888a1": {
+    nameColor: "gold",
+    bold: true,
+    prefix: "[Dev] ",
+    capes: {
+      mcdevyt: {
+        url: mcdevytCape,
+        type: "mcdevyt",
+        title: "McDevYT",
+        class: "mcdevyt",
+        hidden: false,
+        cache: false,
+        value: 12,
+        description:
+          "Not real Minecraft cape. This cape was given to the creator and developer of this website.",
+      },
+    },
+  },
+  "3489cc365d514ecca1f2aeb91628ec19": {
+    nameColor: "gold",
+    bold: true,
+    prefix: "[Smart Dude] ",
   },
 };

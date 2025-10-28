@@ -1,7 +1,11 @@
 import { useEffect, useRef } from "react";
 import "./SkinCanvas.css";
 
-export const CapeCanvas = (props: { capeUrl: string; className?: string }) => {
+export const CapeCanvas = (props: {
+  capeUrl: string;
+  className?: string;
+  onClick: () => void;
+}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
@@ -20,6 +24,7 @@ export const CapeCanvas = (props: { capeUrl: string; className?: string }) => {
 
   return (
     <canvas
+      onClick={props.onClick}
       className={"cape-canvas " + props.className}
       width={10}
       height={16}

@@ -25,6 +25,7 @@ export const Capes = () => {
       <div className="capes-content-section">
         <img src={backgroundSVG} className="background-svg" />
         <div className="capes-content">
+          <h1>Minecraft Capes List</h1>
           <div className="capes-list">
             {Object.values(capeList).map((cape, i) => (
               <CapeDisplay

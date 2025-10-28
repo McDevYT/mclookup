@@ -4,4 +4,6 @@
 
 .cape-canvas {
   aspect-ratio: 5/8;
+
+  object-fit: contain;
 }
