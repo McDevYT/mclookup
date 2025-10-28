@@ -486,15 +486,13 @@ export const capeList: Record<string, Cape> = {
 export const easterEggs: Record<
   string,
   {
-    nameColor: string;
-    bold: boolean;
-    prefix: string;
+    nameColor?: string;
+    prefix?: string;
     capes?: Record<string, Cape>;
   }
 > = {
   "3a84682ccd52495f86d37b02b67888a1": {
-    nameColor: "gold",
-    bold: true,
+    nameColor: "var(--color-secondary)",
     prefix: "[Dev] ",
     capes: {
       mcdevyt: {
@@ -511,8 +509,20 @@ export const easterEggs: Record<
     },
   },
   "3489cc365d514ecca1f2aeb91628ec19": {
-    nameColor: "gold",
-    bold: true,
+    nameColor: "var(--color-secondary)",
     prefix: "[Smart Dude] ",
+  },
+  "42d0ee1c449b4c65bf480240874694fd": {
+    nameColor: "var(--color-secondary)",
+    prefix: "[Cool Dude]",
+  },
+
+  "8bd70e60074a457ebd3c20c6d7f1b391": {
+    nameColor: "var(--color-secondary)",
+    prefix: "[Cool Dude]",
+  },
+  "99174b430ba541cea394ef2021604f98": {
+    nameColor: "var(--color-secondary)",
+    prefix: "[Cool Dude]",
   },
 };
