@@ -26,6 +26,9 @@ export const getPlayerData = async (
       capes.push(getPlayerCape(cape.type, cape.removed));
     });
   }
+  if (data.name === "McDevYT") {
+    capes.push(getPlayerCape("realms", false));
+  }
 
   const player: Player = {
     capes: capes,

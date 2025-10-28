@@ -28,6 +28,7 @@
   margin: 0;
   height: 100%;
   width: auto;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -86,7 +87,25 @@
   margin: 0;
 }
 
-@media (max-width: 1000px) {
+.navbar-a:hover {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .navbar-logo {
+    font-size: 15px;
+  }
+
+  .navbar-logo-svg {
+    width: 40px;
+  }
+}
+
+@media (max-width: 900px) {
   .navbar-burger-holder {
     display: block;
   }

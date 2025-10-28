@@ -4,18 +4,20 @@ export const capeList: Record<string, Cape> = {
   "2011": {
     url: "http://textures.minecraft.net/texture/953cac8b779fe41383e675ee2b86071a71658f2180f56fbce8aa315ea70e2ed6",
     type: "2011",
-    title: "Minecon2011",
+    title: "Minecon 2011",
     class: "M2011",
     alts: [
       "http://textures.minecraft.net/texture/b767d48325ea5324561406b8c82abbd4e2755f11153cd85ab0545cc2",
     ],
     cache: true,
     value: 7,
+    description:
+      "Granted to all registered attendees of Minecon 2011 in Las Vegas.",
   },
   "2012": {
     url: "http://textures.minecraft.net/texture/a2e8d97ec79100e90a75d369d1b3ba81273c4f82bc1b737e934eed4a854be1b6",
     type: "2012",
-    title: "Minecon2012",
+    title: "Minecon 2012",
     class: "M2012",
     alts: [
       "http://textures.minecraft.net/texture/efd61c3c4ac88f1a3468fbdeef45cec89e5afb87b97a1a845bfb3c64fd0b883",
@@ -24,50 +26,59 @@ export const capeList: Record<string, Cape> = {
     ],
     cache: true,
     value: 6,
+    description:
+      "Distributed to Minecon 2012 attendees via a redemption link emailed to registered ticket holders.",
   },
   "2013": {
     url: "http://textures.minecraft.net/texture/153b1a0dfcbae953cdeb6f2c2bf6bf79943239b1372780da44bcbb29273131da",
     type: "2013",
-    title: "Minecon2013",
+    title: "Minecon 2013",
     class: "M2013",
     alts: [
       "http://textures.minecraft.net/texture/f2db938abac444ff315b95e9590184e0e2fe8941fdff559a4ab96cd54bcdd",
     ],
     cache: true,
     value: 5,
+    description:
+      "Awarded to attendees of Minecon 2013 as an exclusive event cape.",
   },
   "2015": {
     url: "http://textures.minecraft.net/texture/b0cc08840700447322d953a02b965f1d65a13a603bf64b17c803c21446fe1635",
     type: "2015",
-    title: "Minecon2015",
+    title: "Minecon 2015",
     class: "M2015",
     alts: [
       "http://textures.minecraft.net/texture/22b9c5ea763c86fc5caea33d82b0fa65a7c228fd321ba54766ea95a3d0b9793",
     ],
     cache: true,
     value: 4,
+    description:
+      "Given to Minecon 2015 attendees as an exclusive convention reward.",
   },
   "2016": {
     url: "http://textures.minecraft.net/texture/e7dfea16dc83c97df01a12fabbd1216359c0cd0ea42f9999b6e97c584963e980",
     type: "2016",
-    title: "Minecon2016",
+    title: "Minecon 2016",
     class: "M2016",
     alts: [
       "http://textures.minecraft.net/texture/5c3ca7ee2a498f1b5d258d5fa927e63e433143add5538cf63b6a9b78ae735",
     ],
     cache: true,
     value: 3,
+    description: "Issued to Minecon 2016 attendees as a commemorative cape.",
   },
   realms: {
     url: "http://textures.minecraft.net/texture/17912790ff164b93196f08ba71d0e62129304776d0f347334f8a6eae509f8a56",
     type: "realms",
-    title: "MapMaker",
+    title: "Realms MapMaker",
     class: "realms",
     alts: [
       "http://textures.minecraft.net/texture/43a51d34b076f9ada555dca562206bd942e46a3c4d5f83c2c29e5b9c3d7dbcb",
     ],
     cache: true,
     value: 8,
+    description:
+      "Awarded to selected Realms content creators whose maps were approved by Mojang and published on Realms.",
   },
   migrator_cape: {
     url: "http://textures.minecraft.net/texture/2340c0e03dd24a11b15a8b33c2a7e9e32abb2051b2481d0ba7defd635ca7a933",
@@ -80,6 +91,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Granted to players who migrated their Mojang account to a Microsoft account.",
   },
   vanilla_cape: {
     url: "http://textures.minecraft.net/texture/f9a76537647989f9a0b6d001e320dac591c359e9e61a31f4ce11c88f207f0ad4",
@@ -88,6 +101,8 @@ export const capeList: Record<string, Cape> = {
     class: "vanilla",
     cache: false,
     value: 1,
+    description:
+      "Awarded to players who owned both Java and Bedrock editions on PC prior to June 6, 2022.",
   },
   cherry: {
     url: "http://textures.minecraft.net/texture/afd553b39358a24edfe3b8a9a939fa5fa4faa4d9a9c3d6af8eafb377fa05c2bb",
@@ -97,6 +112,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Given during the Cherry Grove / Mob Vote event to participants.",
   },
   "15A": {
     url: "http://textures.minecraft.net/texture/cd9d82ab17fd92022dbd4a86cde4c382a7540e117fae7b9a2853658505a80625",
@@ -106,6 +123,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Issued as a celebration for Minecraft’s 15th anniversary to players who claimed the cape on the website.",
   },
   twitch: {
     url: "http://textures.minecraft.net/texture/cb40a92e32b57fd732a00fc325e7afb00a7ca74936ad50d8e860152e482cfbde",
@@ -115,6 +134,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Distributed to players who watched 5 minutes of a minecraft twitchstream during a Minecraft partnership with Twitch.",
   },
   tiktok: {
     url: "http://textures.minecraft.net/texture/569b7f2a1d00d26f30efe3f9ab9ac817b1e6d35f4f3cfb0324ef2d328223d350",
@@ -124,6 +145,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Distributed to players who watched a certain amount of time of a minecraft Tiktok livestream at a Minecraft partnership with Tiktok.",
   },
   mcc: {
     url: "http://textures.minecraft.net/texture/56c35628fe1c4d59dd52561a3d03bfa4e1a76d397c8b9c476c2f77cb6aebb1df",
@@ -133,6 +156,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: true,
     value: 1,
+    description:
+      "Provided to participants of the Minecraft Championship’s 15th anniversary edition.",
   },
   mcexp: {
     url: "http://textures.minecraft.net/texture/7658c5025c77cfac7574aab3af94a46a8886e3b7722a895255fbf22ab8652434",
@@ -142,6 +167,7 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: true,
     value: 2,
+    description: "Awarded to attendees of Minecraft Experience live events.",
   },
   mojangoffice: {
     url: "http://textures.minecraft.net/texture/5c29410057e32abec02d870ecb52ec25fb45ea81e785a7854ae8429d7236ca26",
@@ -151,6 +177,7 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: true,
     value: 1,
+    description: "Awarded to participants of the Minecraft Office MCC event.",
   },
   menace: {
     url: "http://textures.minecraft.net/texture/dbc21e222528e30dc88445314f7be6ff12d3aeebc3c192054fba7e3b3f8c77b1",
@@ -160,6 +187,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Promotional cape for A Minecraft Movie. Redeemable via a code earned by watching participating TikTok livestreams during the movie campaign window (watch-time drop).",
   },
   home: {
     url: "http://textures.minecraft.net/texture/1de21419009db483900da6298a1e6cbf9f1bc1523a0dcdc16263fab150693edd",
@@ -169,6 +198,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Promotional cape for A Minecraft Movie. Redeemable via a code earned by watching participating Twitch livestreams during the movie campaign (watch-time drop).",
   },
   yearn: {
     url: "http://textures.minecraft.net/texture/308b32a9e303155a0b4262f9e5483ad4a22e3412e84fe8385a0bdd73dc41fa89",
@@ -178,6 +209,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: true,
     value: 1,
+    description:
+      "Event cape from the 'A Minecraft Movie Live Event'. Earned by completing the six event quests on the official Bedrock event server; claimable after event completion and available to linked Java accounts.",
   },
   common: {
     url: "http://textures.minecraft.net/texture/5ec930cdd2629c8771655c60eebeb867b4b6559b0e6d3bc71c40c96347fa03f0",
@@ -187,6 +220,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Promotional cape released May 6, 2025. Obtainable by signing into Minecraft Bedrock Edition with a Microsoft account during the promotion window; becomes available to linked Java accounts when claimed on Bedrock.",
   },
   founders: {
     url: "http://textures.minecraft.net/texture/99aba02ef05ec6aa4d42db8ee43796d6cd50e4b2954ab29f0caeb85f96bf52a1",
@@ -196,6 +231,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: true,
     value: 1,
+    description:
+      "Founder's Cape distributed as a limited promotion during MINECON Live 2019/Character Creator launch via the Marketplace; available only during the promotion window to eligible claimants.",
   },
   pan: {
     url: "http://textures.minecraft.net/texture/28de4a81688ad18b49e735a273e086c18f1e3966956123ccb574034c06f5d336",
@@ -205,6 +242,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Bedrock Character Creator 'Pan' cape (also referenced as the Pancape). Distributed via the Character Creator/Marketplace promotions and tied to Bedrock capes rollout.",
   },
   copper: {
     url: "http://textures.minecraft.net/texture/5e6f3193e74cd16cdd6637d9bae5484e3a37ff2a14c2d157c659a07810b1bdca",
@@ -214,6 +253,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: false,
     value: 1,
+    description:
+      "Commemorative cape tied to a Mojang watch-time/redeem promotion (Copper Cape quest). Codes are issued by completing the platform watch-time quests on TikTok or Twitch and redeeming on minecraft.net.",
   },
   mojangstudios: {
     url: "http://textures.minecraft.net/texture/9e507afc56359978a3eb3e32367042b853cddd0995d17d0da995662913fb00f7",
@@ -222,6 +263,8 @@ export const capeList: Record<string, Cape> = {
     class: "mojangstudios",
     cache: true,
     value: 9,
+    description:
+      "Developer/staff cape distributed to Mojang Studios employees and internal accounts as an official studio branding cape.",
   },
   mojang: {
     url: "http://textures.minecraft.net/texture/5786fe99be377dfb6858859f926c4dbc995751e91cee373468c5fbf4865e7151",
@@ -233,6 +276,8 @@ export const capeList: Record<string, Cape> = {
     ],
     cache: true,
     value: 9,
+    description:
+      "Historical Mojang staff/developer cape variant used by Mojang employees prior to later studio rebrands and character creator capes.",
   },
   mojangold: {
     url: "http://textures.minecraft.net/texture/8f120319222a9f4a104e2f5cb97b2cda93199a2ee9e1585cb8d09d6f687cb761",
@@ -244,17 +289,21 @@ export const capeList: Record<string, Cape> = {
     ],
     cache: true,
     value: 11,
+    description:
+      "Earlier Mojang staff cape variant reflecting older Mojang branding; assigned to Mojang developers in earlier years.",
   },
   scrolls: {
     url: "http://textures.minecraft.net/texture/3efadf6510961830f9fcc077f19b4daf286d502b5f5aafbd807c7bbffcaca245",
     type: "scrolls",
-    title: "ScrollsChamp",
+    title: "Scrolls Champ",
     class: "scrolls",
     alts: [
       "http://textures.minecraft.net/texture/86e841dcb6465d1f95a56270243d23c596da4721acd9ca2d95927b1b8535dc54",
     ],
     cache: true,
     value: 11,
+    description:
+      "Cape granted to top players in Mojang’s Scrolls competitive events (Weekly First Place five-time winners); awarded during Scrolls competitive seasons and Minecon-related contests.",
   },
   mojira: {
     url: "http://textures.minecraft.net/texture/ae677f7d98ac70a533713518416df4452fe5700365c09cf45d0d156ea9396551",
@@ -266,6 +315,8 @@ export const capeList: Record<string, Cape> = {
     ],
     cache: true,
     value: 10,
+    description:
+      "Cape assigned to moderators on Mojang’s bug tracker (Mojira) as a role recognition for community moderation and bug-tracker duties.",
   },
   cobalt: {
     url: "http://textures.minecraft.net/texture/ca35c56efe71ed290385f4ab5346a1826b546a54d519e6a3ff01efa01acce81",
@@ -277,6 +328,8 @@ export const capeList: Record<string, Cape> = {
     ],
     cache: true,
     value: 11,
+    description:
+      "Cape awarded to participants, winners, or contributors in Mojang’s Cobalt community events and level-making competitions; tied to Cobalt tournaments and contests.",
   },
   translator: {
     url: "http://textures.minecraft.net/texture/1bf91499701404e21bd46b0191d63239a4ef76ebde88d27e4d430ac211df681e",
@@ -288,6 +341,8 @@ export const capeList: Record<string, Cape> = {
     ],
     cache: true,
     value: 10,
+    description:
+      "Translator cape given to selected contributors and proofreaders on Mojang’s Crowdin localization project as a reward for notable translation work.",
   },
   translatorchinese: {
     url: "http://textures.minecraft.net/texture/2262fb1d24912209490586ecae98aca8500df3eff91f2a07da37ee524e7e3cb6",
@@ -296,6 +351,8 @@ export const capeList: Record<string, Cape> = {
     class: "translatorchinese",
     cache: true,
     value: 12,
+    description:
+      "Variant of the Translator cape awarded to specific contributors for Chinese localization work on Mojang’s Crowdin project.",
   },
   translatorjapanese: {
     url: "http://textures.minecraft.net/texture/ca29f5dd9e94fb1748203b92e36b66fda80750c87ebc18d6eafdb0e28cc1d05f",
@@ -304,6 +361,8 @@ export const capeList: Record<string, Cape> = {
     class: "translatorjapanese",
     cache: true,
     value: 12,
+    description:
+      "Translator cape variant given to Japanese localization contributors; cheapsh0t is a documented recipient for helping Mojang’s Japanese localization efforts.",
   },
   turtle: {
     url: "http://textures.minecraft.net/texture/5048ea61566353397247d2b7d946034de926b997d5e66c86483dfb1e031aee95",
@@ -312,6 +371,8 @@ export const capeList: Record<string, Cape> = {
     class: "turtle",
     cache: true,
     value: 12,
+    description:
+      "Personalized cape originally given to player billyK_ for suggesting the addition of turtles; treated as a one-off/personal reward by Mojang.",
   },
   prismarine: {
     url: "http://textures.minecraft.net/texture/d8f8d13a1adf9636a16c31d47f3ecc9bb8d8533108aa5ad2a01b13b1a0c55eac",
@@ -323,6 +384,8 @@ export const capeList: Record<string, Cape> = {
     ],
     cache: true,
     value: 12,
+    description:
+      "Cape awarded by Mojang to Drullkus for recreating the prismarine block for a mod (Chisel) rather than using Mojang’s texture; granted as a community/mod-author recognition.",
   },
   spade: {
     url: "http://textures.minecraft.net/texture/2e002d5e1758e79ba51d08d92a0f3a95119f2f435ae7704916507b6c565a7da8",
@@ -331,6 +394,8 @@ export const capeList: Record<string, Cape> = {
     class: "spade",
     cache: true,
     value: 12,
+    description:
+      "Personal developer cape given to MrMessiah in thanks for creating the BetterLight mod and contributions to Minecraft’s lighting/grass features.",
   },
   snowman: {
     url: "http://textures.minecraft.net/texture/23ec737f18bfe4b547c95935fc297dd767bb84ee55bfd855144d279ac9bfd9fe",
@@ -339,6 +404,8 @@ export const capeList: Record<string, Cape> = {
     class: "snowman",
     cache: true,
     value: 12,
+    description:
+      "Personalized cape given to JulianClark as a one-off recognition; documented as a personal/rare cape in community records.",
   },
   dB: {
     url: "http://textures.minecraft.net/texture/bcfbe84c6542a4a5c213c1cacf8979b5e913dcb4ad783a8b80e3c4a7d5c8bdac",
@@ -347,6 +414,8 @@ export const capeList: Record<string, Cape> = {
     class: "dB",
     cache: true,
     value: 12,
+    description:
+      "Personal cape granted to DannyBstyle (composer) as recognition from Notch/Mojang for his musical contributions to the game.",
   },
   millionth: {
     url: "http://textures.minecraft.net/texture/70efffaf86fe5bc089608d3cb297d3e276b9eb7a8f9f2fe6659c23a2d8b18edf",
@@ -355,6 +424,8 @@ export const capeList: Record<string, Cape> = {
     class: "millionth",
     cache: true,
     value: 12,
+    description:
+      "Cape awarded to akronman1, the buyer of the 1,000,000th copy of Minecraft (design credited to @Kinten); commemorative milestone reward.",
   },
   birthday: {
     url: "http://textures.minecraft.net/texture/2056f2eebd759cce93460907186ef44e9192954ae12b227d817eb4b55627a7fc",
@@ -363,6 +434,8 @@ export const capeList: Record<string, Cape> = {
     class: "birthday",
     cache: true,
     value: 12,
+    description:
+      "Personal cape originally granted to Mojang employee Gr8Bizzo (formerly Gr8_Escape) as an internal/celebratory item.",
   },
   valentine: {
     url: "http://textures.minecraft.net/texture/e578ef995fabcf0a94768f9651ac3aaba30c59ef85d2438e9b3e0cc1d810652b",
@@ -371,6 +444,8 @@ export const capeList: Record<string, Cape> = {
     class: "valentine",
     cache: true,
     value: 12,
+    description:
+      "Personal Valentine’s Day cape granted to a specific community member (LolFoxy2) by a Mojang employee as a one-off; later removed to preserve rarity.",
   },
   sniffer: {
     url: "http://textures.minecraft.net/texture/7a93b1867eb599f2b76e6e1c30a0ddb530e6f4c7bce6515d1ba72b206df30e39",
@@ -380,6 +455,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: true,
     value: 12,
+    description:
+      "Internal/prototype cape used during testing and preview builds related to the Sniffer mob; assigned to internal testers or event participants during previews.",
   },
   oxeye: {
     url: "http://textures.minecraft.net/texture/7706b5f5fc90329691e59277dcc66ba20572219fa8e5da472afd5235fad12cc8",
@@ -389,6 +466,8 @@ export const capeList: Record<string, Cape> = {
     hidden: false,
     cache: true,
     value: 12,
+    description:
+      "Cape referencing Oxeye Studios, collaborators on projects such as Cobalt; Accidentally awarded to a player but later removed.",
   },
   bacon: {
     url: "http://textures.minecraft.net/texture/fd14214cd8073059e93d9c626260f5df85e5a959181537119df56cadaf5002cc",
@@ -398,5 +477,7 @@ export const capeList: Record<string, Cape> = {
     hidden: true,
     cache: true,
     value: 12,
+    description:
+      "Personal cape originally given by Notch to Miclee (Bacon_Donut) for contribution/idea (Pigman). Documented as one of the earliest personal capes and later revoked from public gifting.",
   },
 };

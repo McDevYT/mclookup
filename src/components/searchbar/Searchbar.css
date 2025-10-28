@@ -31,7 +31,12 @@
   font-size: 20px;
   font-family: "Squada One", cursive;
   border-radius: 100px;
+  transition: scale 0.3s ease-out;
   cursor: pointer;
+}
+
+.searchbar-button:active {
+  scale: 0.9;
 }
 
 .searchbar-holder {

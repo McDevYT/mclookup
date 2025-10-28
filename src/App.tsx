@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Home } from "./pages/home/Home";
 import { Navbar } from "./components/navbar/Navbar";
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <StrictMode>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <div className="page-holder">
             <Routes>
@@ -23,11 +23,12 @@ function App() {
               <Route path="/capes/" element={<Capes />} />
               <Route path="/faq/" element={<FAQ />} />
               <Route path="/contact/" element={<Contact />} />
+              <Route path="*" element={<Home />} />
             </Routes>
             <Footer />
           </div>
           <Background />
-        </BrowserRouter>
+        </HashRouter>
       </StrictMode>
     </>
   );

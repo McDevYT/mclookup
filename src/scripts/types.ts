@@ -14,6 +14,7 @@ export interface Cape {
   alts?: string[];
   hidden?: boolean;
   cache: boolean;
+  description: string;
   value: number;
 }
 

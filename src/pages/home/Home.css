@@ -23,3 +23,23 @@
 .home {
   width: 100%;
 }
+
+.home-logo {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+}
+
+.home-logo-svg {
+  width: 90px;
+}
+
+@media (max-width: 700px) {
+  .home-logo {
+    font-size: 40px;
+  }
+
+  .home-logo-svg {
+    width: 60px;
+  }
+}
