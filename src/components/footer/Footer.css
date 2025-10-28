@@ -1,6 +1,6 @@
 .footer {
   background: var(--color-accent);
-  padding: 20px;
+  padding: 30px;
   width: 100vw;
 
   display: flex;
@@ -12,6 +12,8 @@
 .footer-links {
   display: flex;
   justify-content: center;
+
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
@@ -30,8 +32,8 @@
   opacity: 0.3;
 }
 
-@media (max-width: 500px) {
-  .footer-links {
-    flex-direction: column;
+@media (max-width: 400px) {
+  .footer-links p {
+    display: none;
   }
 }

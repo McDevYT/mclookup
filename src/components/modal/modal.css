@@ -77,5 +77,6 @@
 @media (max-width: 650px) {
   .modal {
     height: 80vh;
+    width: 90vw;
   }
 }

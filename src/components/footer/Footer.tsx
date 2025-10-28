@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./Footer.css";
-import { Impressum } from "../impressum/Impressum";
+import { Imprint } from "../imprint/imprint";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
-  const [isImpressumOpen, setIsImpressumOpen] = useState(false);
+  const [isImprintOpen, setIsImprintOpen] = useState(false);
 
   return (
     <footer className="footer">
@@ -12,26 +12,31 @@ export const Footer = () => {
         <Link className="footer-a" to="/">
           Home
         </Link>
+        <p>•</p>
         <Link className="footer-a" to="/search">
           Search
         </Link>
+        <p>•</p>
         <Link className="footer-a" to="/capes">
           Capes
         </Link>
+        <p>•</p>
         <Link className="footer-a" to="/faq">
           FAQ
         </Link>
+        <p>•</p>
         <Link className="footer-a" to="/contact">
           Contact
         </Link>
-        <Impressum
-          isOpen={isImpressumOpen}
+        <p>•</p>
+        <Imprint
+          isOpen={isImprintOpen}
           onClose={() => {
-            setIsImpressumOpen(false);
+            setIsImprintOpen(false);
           }}
         />
-        <a className="footer-a" onClick={() => setIsImpressumOpen(true)}>
-          Impressum
+        <a className="footer-a" onClick={() => setIsImprintOpen(true)}>
+          Imprint
         </a>
       </div>
       <p className="footer-copyright-text">
