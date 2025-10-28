@@ -6,7 +6,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
 
-  background: var(--color-background);
+  background: var(--color-background-dark);
 
   width: 70vw;
   height: 60vh;

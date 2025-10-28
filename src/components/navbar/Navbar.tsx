@@ -48,6 +48,8 @@ export const Navbar = () => {
 
   useLayoutEffect(() => {
     updateUnderline();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -55,6 +57,8 @@ export const Navbar = () => {
     updateUnderline();
     window.addEventListener("resize", updateUnderline);
     return () => window.removeEventListener("resize", updateUnderline);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   return (
