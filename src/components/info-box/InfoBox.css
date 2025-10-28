@@ -1,0 +1,18 @@
+.info-box {
+  background: var(--color-accent);
+  padding: 0px 30px;
+  width: 40%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.info-box h2 {
+  text-decoration: underline 3px var(--color-secondary);
+}
+
+@media (max-width: 1000px) {
+  .info-box {
+    width: 100%;
+  }
+}
