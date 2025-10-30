@@ -10,7 +10,7 @@
 
 .home-info-boxes {
   margin: 0 auto;
-  
+  max-width: 1200px;
   width: 100%;
   display: flex;
   gap: 40px;
