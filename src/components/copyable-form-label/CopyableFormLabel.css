@@ -43,4 +43,9 @@
   border: none;
   border-radius: 10px;
   width: 60px;
+  transition: scale 0.2s ease-in-out;
+}
+
+.copyable-form button:active {
+  scale: 0.9;
 }

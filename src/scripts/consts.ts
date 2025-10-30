@@ -525,4 +525,8 @@ export const easterEggs: Record<
     nameColor: "var(--color-secondary)",
     prefix: "[Cool Dude]",
   },
+  "026fa575e6aa4dfc9c8ace19b18a89da":{
+    nameColor: "var(--color-secondary)",
+    prefix: "[🧊]",
+  }
 };

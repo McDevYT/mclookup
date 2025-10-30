@@ -26,7 +26,7 @@ export const Profile = (props: { player: Player }) => {
     }
   }, [props.player]);
 
-  const handleSkinDownload = async () => {
+  /**const handleSkinDownload = async () => {
     try {
       const response = await fetch(props.player.skin, { mode: "cors" });
       const blob = await response.blob();
@@ -43,7 +43,7 @@ export const Profile = (props: { player: Player }) => {
     } catch (err) {
       console.error("Failed to download skin:", err);
     }
-  };
+  };*/
 
   return (
     <div className="profile">
@@ -52,8 +52,10 @@ export const Profile = (props: { player: Player }) => {
           className="profile-skincanvas"
           skinUrl={props.player.skin}
           slim={props.player.model === "slim"}
-        />
-        <button onClick={handleSkinDownload}>Download</button>
+        />{/**
+          
+          <button onClick={handleSkinDownload}>Download</button>
+          */        }
       </div>
       <div className="profile-stats">
         <h1 ref={headingRef}>{username}</h1>

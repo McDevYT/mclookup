@@ -6,12 +6,9 @@ export const Modal = (props: {
   title?: string;
   onClose: () => void;
 }) => {
-  const handleWheel = (e: React.WheelEvent<HTMLDivElement>) => {
-    e.stopPropagation();
-  };
+
   return (
     <div
-      onWheel={handleWheel}
       className={`modal ${props.isOpen ? "open" : ""}`}
     >
       <div className="modal-header">

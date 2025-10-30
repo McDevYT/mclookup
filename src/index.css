@@ -42,7 +42,11 @@ body {
 
 h1,
 h2,
-h3 {
+h3,h4,h5,h6 {
   color: var(--color-primary);
   font-family: "Squada One", cursive;
 }
+
+ p, a, button, label{
+  color: var(--color-primary);
+ }

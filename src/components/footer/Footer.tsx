@@ -12,23 +12,23 @@ export const Footer = () => {
         <Link className="footer-a" to="/">
           Home
         </Link>
-        <p>•</p>
+        <p className="footer-links-p">•</p>
         <Link className="footer-a" to="/search">
           Search
         </Link>
-        <p>•</p>
+        <p className="footer-links-p">•</p>
         <Link className="footer-a" to="/capes">
           Capes
         </Link>
-        <p>•</p>
+        <p className="footer-links-p">•</p>
         <Link className="footer-a" to="/faq">
           FAQ
         </Link>
-        <p>•</p>
+        <p className="footer-links-p">•</p>
         <Link className="footer-a" to="/contact">
           Contact
         </Link>
-        <p>•</p>
+        <p className="footer-links-p">•</p>
         <Imprint
           isOpen={isImprintOpen}
           onClose={() => {
@@ -40,7 +40,7 @@ export const Footer = () => {
         </a>
       </div>
       <p className="footer-copyright-text">
-        &#169; {new Date().getFullYear()} McLoopup; All rights reserved
+        &#169; {new Date().getFullYear()} McLookup; All rights reserved
       </p>
     </footer>
   );
